@@ -11,4 +11,6 @@ The simulink model uses a seconnd order integration block to handle the maths. W
 <img width="1810" height="1138" alt="Bouncing_ball" src="https://github.com/user-attachments/assets/1a5a8ec4-af37-4097-bc3d-f7d4af12a9b9" />
 Here is a plot of the result produce from the simulink model. Intial condition x0 = 10 and dx/dt = 0. Ran for 10 seconds with the coefficient of restitution e equal 0.8.
 
+
+
 The result from both model is similar with matlab producing a smoother curve. This is because although both model uses integration and model the event as continuous,the timestep form simulink is larger and hence produced a more jagged curve. However the simulink model is far simplier and the seconnd order integration block handlinng everything. This combine with the fact that stepsize can be reduce eeasily in simulink, shows that using simulink to modle this problem is more favourible.
